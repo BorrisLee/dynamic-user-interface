@@ -1,0 +1,16 @@
+body{
+  background: blue;
+}
+
+/*
+      ===============
+      DROPDOWN STYLES
+      ===============
+*/
+.dropdown {
+  border: 1px solid red;
+}
+
+.dropdown-item {
+  background: blueviolet;
+}
