@@ -9,10 +9,24 @@ const Dropdown = () => {
     // create new dropdown menu
     dropdown = document.createElement('ul');
     dropdown.classList.add('dropdown');
-
+    dropdown.textContent = 'MENU';
 
     // append dropdown menu to body element
     document.querySelector('body').appendChild(dropdown);
+
+    // add click event
+    dropdown.addEventListener('click', () => {
+
+      // get node list of items
+      const itemList = document.querySelectorAll('.dropdown-item');
+
+      // iterate though node list
+      itemList.forEach(item => {
+
+        // toggle display on list item
+        (item.style.display === 'block') ? item.style.display = 'none' : item.style.display = 'block';
+      });
+    });
   }
 
   // dropdown method: add item

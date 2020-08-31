@@ -1,5 +1,30 @@
-body{
-  background: blue;
+/*
+      =======
+      IMPORTS
+      =======
+*/
+
+/* Font: Quicksand */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/*
+      ============
+      RESET STYLES
+      ============
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
 }
 
 /*
@@ -8,9 +33,19 @@ body{
       ===============
 */
 .dropdown {
-  border: 1px solid red;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.dropdown:hover {
+  cursor: pointer;
 }
 
 .dropdown-item {
-  background: blueviolet;
+  display: none;
 }
+
+/*
+      =============
+      SLIDER STYLES
+      =============
+*/
